@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 03-jun-2021 19:26:27 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class name="Modelo.Usuarios" optimistic-lock="version" schema="Z3" table="USUARIOS">
+    <id name="idu" type="int">
+      <column name="IDU"/>
+      <generator class="assigned"/>
+    </id>
+    <property name="usu" type="string">
+      <column length="20" name="USU" not-null="true"/>
+    </property>
+    <property name="contra" type="string">
+      <column length="20" name="CONTRA" not-null="true"/>
+    </property>
+    <property name="apodo" type="string">
+      <column length="20" name="APODO" not-null="true"/>
+    </property>
+    <property name="telefono" type="string">
+      <column length="9" name="TELEFONO" not-null="true"/>
+    </property>
+    <property name="email" type="string">
+      <column length="30" name="EMAIL" not-null="true"/>
+    </property>
+
+  </class>
+</hibernate-mapping>

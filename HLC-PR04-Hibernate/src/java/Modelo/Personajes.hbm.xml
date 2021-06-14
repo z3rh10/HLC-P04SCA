@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 03-jun-2021 19:26:27 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class name="Modelo.Personajes" optimistic-lock="version" schema="Z3" table="PERSONAJES">
+    <id name="idp" type="int">
+      <column name="IDP"/>
+      <generator class="assigned"/>
+    </id>
+    <property name="nombrep" type="string">
+      <column length="40" name="NOMBREP" not-null="true"/>
+    </property>
+    <property name="costep" type="int">
+      <column name="COSTEP" not-null="true"/>
+    </property>
+    <property name="rol" type="string">
+      <column length="4" name="ROL" not-null="true"/>
+    </property>
+    <property name="lanzamientop" type="date">
+      <column length="10" name="LANZAMIENTOP" not-null="true"/>
+    </property>
+  </class>
+</hibernate-mapping>
